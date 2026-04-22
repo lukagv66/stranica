@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jelovnik</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Sekuya&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.6.0/css/all.min.css">
+<body>
+    <section class="header">
+        <nav>
+           <a href="index.html"><img src="slike/logo-svg.png" alt="Restoran Rakić Logo"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">Početna</a></li>
+                    <li><a href="jelovnik.html">Jelovnik</a></li>
+                    <li><a href="kontakt.html">Kontakt</a></li>
+                    <li><a href="rezervacije.html">Rezervacije</a></li>
+                    <li><a href="onama.html">O nama</a></li>
+                </ul>
+
+
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+
+        <div class="text-box">
+            <h1>Restoran Rakić</h1>
+            <h3>Mali obiteljski restoran<br>-Jelovnik-</h3>
+            <p>Uživajte u vrhunskim jelima i nezaboravnom ambijentu</p>
+           
+        </div>
+    </section>
+    <section class="jelovnik">
+            <h1>Naša ponuda</h1>
+            <section class="menu">
+    <div class="menu-container">
+
+        <h2>Predjela</h2>
+
+        <div class="menu-item">
+            <div class="menu-title">
+                <h3>Bruschetta</h3>
+                <span>6€</span>
+            </div>
+            <p>Prepečeni kruh s rajčicom, češnjakom i maslinovim uljem</p>
+        </div>
+
+        <div class="menu-item">
+            <div class="menu-title">
+                <h3>Juha dana</h3>
+                <span>5€</span>
+            </div>
+            <p>Svježe pripremljena domaća juha</p>
+        </div>
+
+        <h2>Glavna jela</h2>
+
+        <div class="menu-item">
+            <div class="menu-title">
+                <h3>Beef steak</h3>
+                <span>18€</span>
+            </div>
+            <p>Sočni odrezak s prilogom po izboru</p>
+        </div>
+
+        <div class="menu-item">
+            <div class="menu-title">
+                <h3>Piletina s roštilja</h3>
+                <span>12€</span>
+            </div>
+            <p>Servirano s povrćem i krumpirom</p>
+        </div>
+
+        <h2>Deserti</h2>
+
+        <div class="menu-item">
+            <div class="menu-title">
+                <h3>Tiramisu</h3>
+                <span>5€</span>
+            </div>
+            <p>Klasični talijanski desert</p>
+        </div>
+
+    </div>
+</section>
+<!--- footer --->
+    <section class="footer">
+        <h4>Kontaktirajte nas</h4>
+        <p><i class="fa-solid fa-location-dot"></i> Adresa: Vrbskih žrtava 88, Gornja Vrba</p>
+        <p><i class="fa-solid fa-phone"></i> Telefon: +123 456 7890</p>
+        <p><i class="fa-solid fa-envelope"></i> Email: lukagv66@gmail.com</p>
+        <div class="icons">
+            <a href="https://www.facebook.com/profile.php?id=61567525394911&locale=hr_HR" target="_blank">
+                <i class="fa-brands fa-facebook"></i>
+            </a>
+            <a href="https://www.instagram.com/sabeso_gastrowinebar/" target="_blank">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+            <h4>Sva prava pridržana</h4>
+        </div>
+    </section>
+       <script>
+            var navLinks = document.getElementById("navLinks");
+
+            function showMenu(){
+                navLinks.style.right = "0";
+            }
+            function hideMenu(){
+                navLinks.style.right = "-300px";
+            }
+
+       </script> 
+
+
+    </body>
+</html>

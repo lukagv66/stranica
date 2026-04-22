@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Šabeso</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Sekuya&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.6.0/css/all.min.css">
+<body>
+    <section class="header">
+        <nav>
+           <a href="index.html"><img src="slike/logo-svg.png" alt="Šabeso Logo"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">Početna</a></li>
+                    <li><a href="jelovnik.html">Jelovnik</a></li>
+                    <li><a href="kontakt.html">Kontakt</a></li>
+                    <li><a href="rezervacije.html">Rezervacije</a></li>
+                    <li><a href="onama.html">O nama</a></li>
+                </ul>
+
+
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+
+        <div class="text-box">
+            <h1>Restoran Rakić</h1>
+            <h3>Mali obiteljski restoran <br>-Rezervacije-</h3>
+            <p>Uživajte u vrhunskim jelima i nezaboravnom ambijentu</p>
+            <a href="jelovnik.html" class="hero-btn">Pregledaj jelovnik</a>
+        </div>
+    </section>
+<!-- tekst ispood headera -->
+ <h1>Rezervacije</h1>
+    <p>Ovdje možete rezervirati stol u našem restoranu. Molimo vas da ispunite sljedeći obrazac kako bismo mogli potvrditi vašu rezervaciju.</p>
+
+    <div class="rez-box">
+        <h2>Vaše rezervacije</h2>
+        <div id="reservationsList"></div>
+        <h2>Nova rezervacija</h2>
+        <form id="reservationForm">
+            <input type="text" id="ime" name="ime" placeholder="Vaše ime" required>
+            <input type="email" id="email" name="email" placeholder="Vaš email" required>
+            <input type="tel" id="telefon" name="telefon" placeholder="Vaš telefon" required>
+            <input type="number" id="brojOsoba" name="brojOsoba" placeholder="Broj osoba" min="1" max="20" required>
+            <input type="date" id="datum" name="datum" required>
+            <input type="time" id="vrijeme" name="vrijeme" required>
+            <button type="submit" class="hero-btn red-btn">Rezerviraj</button>
+        </form>
+        <div id="message"></div>
+    </div>
+<!--- footer --->
+    <section class="footer">
+        <h4>Kontaktirajte nas</h4>
+        <p><i class="fa-solid fa-location-dot"></i> Adresa: Vrbskih žrtava 88, Gornja Vrba</p>
+        <p><i class="fa-solid fa-phone"></i> Telefon: +123 456 7890</p>
+        <p><i class="fa-solid fa-envelope"></i> Email: lukagv66@gmail.com</p>
+        <div class="icons">
+            <a href="https://www.facebook.com/profile.php?id=61567525394911&locale=hr_HR" target="_blank">
+                <i class="fa-brands fa-facebook"></i>
+            </a>
+            <a href="https://www.instagram.com/sabeso_gastrowinebar/" target="_blank">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+            <h4>Sva prava pridržana</h4>
+        </div>
+    </section>
+       <script src="rezervacija.js">
+       </script> 
+
+
+    </body>
+</html>

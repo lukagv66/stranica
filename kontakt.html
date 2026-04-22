@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontakt</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Sekuya&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.6.0/css/all.min.css">
+<body>
+    <section class="header">
+        <nav>
+           <a href="index.html"><img src="slike/logo-svg.png" alt="Restoran Rakić Logo"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">Početna</a></li>
+                    <li><a href="jelovnik.html">Jelovnik</a></li>
+                    <li><a href="kontakt.html">Kontakt</a></li>
+                    <li><a href="rezervacije.html">Rezervacije</a></li>
+                    <li><a href="onama.html">O nama</a></li>
+                </ul>
+
+
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+
+        <div class="text-box">
+            <h1>Restoran Rakić</h1>
+            <h3>Mali obiteljski restoran <br>-Kontakt-</h3>
+            <p>Uživajte u vrhunskim jelima i nezaboravnom ambijentu</p>
+            <a href="jelovnik.html" class="hero-btn">Pregledaj jelovnik</a>
+        </div>
+    </section>
+<!-- tekst ispood headera -->
+    <section class="lokacija">
+           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2813.6006210671553!2d18.061442575939548!3d45.154686054037334!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x475db0d13abbb2eb%3A0x93bc276d98ea56ab!2sUl.%20Vrbskih%20%C5%BErtava!5e0!3m2!1shr!2shr!4v1776684239811!5m2!1shr!2shr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+    <section class="radno-vrijeme">
+        <h1>Radno vrijeme</h1>
+        <p>Pon-Pet: 10:00 - 22:00</p>
+        <p>Sub-Ned: 12:00 - 24:00</p>
+    </section>
+    <section class="kontaktirajte-nas">
+        <h1>Kontaktirajte nas</h1>
+        <p><i class="fa-solid fa-location-dot"></i> Adresa: Vrbskih žrtava 88, Gornja Vrba</p>
+        <p><i class="fa-solid fa-phone"></i> Telefon: +123 456 7890</p>
+        <p><i class="fa-solid fa-envelope"></i> Email: lukagv66@gmail.com</p>
+        <div class="icons">
+            <a href="https://www.facebook.com/profile.php?id=61567525394911&locale=hr_HR" target="_blank">
+                <i class="fa-brands fa-facebook"></i>
+            </a>
+            <a href="https://www.instagram.com/sabeso_gastrowinebar/" target="_blank">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+        </div>
+    </section>
+<!--- footer --->
+    <section class="footer">
+        <h4>Sva prava pridržana</h4>
+        </div>
+    </section>
+       <script>
+            var navLinks = document.getElementById("navLinks");
+
+            function showMenu(){
+                navLinks.style.right = "0";
+            }
+            function hideMenu(){
+                navLinks.style.right = "-300px";
+            }
+
+       </script> 
+
+
+    </body>
+</html>
